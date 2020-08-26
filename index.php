@@ -44,7 +44,7 @@
     </div>
     <?php endfor; ?>
     </div>
-    
+
 </div>
 </body>
 </html>
