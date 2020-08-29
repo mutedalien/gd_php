@@ -13,9 +13,14 @@
 
 <?php require "blocks/header.php" ?>
 
+<div class="container mt-5">
+<h3>Контактная форма</h3>
 <form action="check.php" method="post">
-    <input type="email" name="email" placeholder="Введите email">
+    <input type="email" name="email" class="form-control" placeholder="Введите email"><br>
+    <textarea name="message" class="form-control" placeholder="Введите ваше сообщение"></textarea><br>
+    <button type="submit" name="send" class="btn btn-success">Отправить</button>
 </form>
+</div>
 
 <?php require "blocks/footer.php" ?>
 
