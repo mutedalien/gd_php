@@ -13,6 +13,10 @@
 
 <?php require "blocks/header.php" ?>
 
+<form action="check.php" method="post">
+    <input type="email" name="email" placeholder="Введите email">
+</form>
+
 <?php require "blocks/footer.php" ?>
 
 </body>
