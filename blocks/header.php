@@ -6,5 +6,11 @@
         <a class="p-2 text-dark" href="#">Support</a>
         <a class="p-2 text-dark" href="#">Pricing</a>
     </nav>
-    <a class="btn btn-outline-primary" href="#">Войти</a>
+    <?php
+        if ($_COOKIE['user'] == 'true'):
+    ?>
+    <a class="btn btn-outline-primary" href="/auth.php">Кабинет пользователя</a>
+    <?php else: ?>
+    <a class="btn btn-outline-primary" href="/auth.php">Войти</a>
+    <?php endif; ?>
 </div>
